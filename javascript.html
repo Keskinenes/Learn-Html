@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>   
+    <title>Javascript</title>
+
+    <style>               
+   .kapsa {
+    width: 1000px;
+    margin: auto;
+  }
+
+  #btn {
+    width: 200px;
+    height: 100px;
+    font-size: 32px;
+  }
+
+  #sonuc{
+    width: 100%;
+    font-size: 50px;
+    text-align: center;
+    padding: 40px;
+    border: 20px solid#000000;
+  }
+    </style> 
+    <script>
+        function arttir(){            
+        var rakam1= parseInt(document.getElementById("rakam1").value);
+        document.getElementById('sonuc').innerText=rakam1+1; 
+        }     
+    </script>    
+</head>
+<body>
+    <div class="kapsa">
+        <label for="text"> Rakam 1 </label>
+        <input type="text" id="rakam1">
+        <button id="btn" onclick="arttir()">
+            <img src="./Images/artı.png" width="30" height="auto" alt="Arttır">            
+        </button>
+        <div id="sonuc">
+            Sonuç Burada Başka Yerde Arama!!!!!!!!!!!
+        </div>
+    </div>
+</body>
+</html>
